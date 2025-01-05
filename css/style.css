@@ -513,4 +513,57 @@ h6,
     .school-logo{
         display: none;
     }
+
+    /* h1{
+        font-size: 1rem;
+    } */
+}
+
+@media (max-width: 768px) {
+    .school-logo{
+        height: 5rem;
+    }
+
+    /* h1{
+        font-size: 1rem;
+    } */
+
+    /* .navbar .navbar-nav .nav-link {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        font-size: 0.8rem;
+    } */
+}
+
+@media (max-width: 1150px) {
+    .school-logo{
+        height: 5rem;
+    }
+
+    /* .navbar .navbar-nav .nav-link {
+        padding: 8px;
+        font-size: 0.4rem;
+    } */
+
+    /* .navbar .nav-item .dropdown-menu {
+        font-size: 0.9rem;
+    } */
+}
+
+@media (max-width: 1200px) {
+    .school-logo{
+        height: 5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0px 9px;
+        font-size: 1rem;
+    }
 }
