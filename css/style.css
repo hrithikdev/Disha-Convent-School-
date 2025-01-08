@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --primary: #FE5D37;
     --light: #FFF5F3;
@@ -67,7 +68,15 @@
 
 
 /*** Heading ***/
-h1,
+h1{
+    font-family: "Inter", serif;
+    /* font-weight: 600; */ 
+    /* font-family: "Roboto Condensed", serif; */
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 h2,
 h3,
 h4,
@@ -82,6 +91,8 @@ h4,
 .display-5,
 .display-6 {
     font-family: 'Lobster Two', cursive;
+    /* font-family: "Merriweather Sans", serif; */
+    /* font-family: "Inter", serif; */
     font-weight: 700;
 }
 
@@ -509,61 +520,91 @@ h6,
     object-fit: cover;
 }
 
-@media (max-width: 576px) {
+/* .navbar .navbar-nav .nav-link {
+    padding: 9px;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2.5rem;
+} */
+
+@media (max-width: 768px) {
     .school-logo{
         display: none;
     }
 
-    /* h1{
-        font-size: 1rem;
-    } */
+    h1{
+        font-size: 1.5rem;
+    }
 }
 
-@media (max-width: 768px) {
-    .school-logo{
-        height: 5rem;
-    }
-
-    /* h1{
-        font-size: 1rem;
-    } */
-
-    /* .navbar .navbar-nav .nav-link {
-        padding: 8px;
-        font-size: 0.8rem;
-    }
-
-    .navbar .nav-item .dropdown-menu {
-        font-size: 0.8rem;
-    } */
-}
-
-@media (max-width: 1150px) {
-    .school-logo{
-        height: 5rem;
-    }
-
-    /* .navbar .navbar-nav .nav-link {
-        padding: 8px;
-        font-size: 0.4rem;
-    } */
-
-    /* .navbar .nav-item .dropdown-menu {
-        font-size: 0.9rem;
-    } */
-}
-
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
     .school-logo{
         height: 5rem;
     }
 
     h1{
+        font-size: 1.7rem;
+    }
+
+    /* .navbar .navbar-nav .nav-link {
+        padding: 8px;
+        font-size: 0.9rem;
+    } */
+
+    .navbar .nav-item .dropdown-menu {
+        font-size: 0.5rem;
+    }
+
+    .btn-joinus{
+        font-size: 0.9rem;
+    }
+}
+
+ @media (min-width: 992px) {
+    .school-logo{
+        height: 5rem;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 7.5px;
+        font-size: 0.95rem;
+    }
+
+     .navbar .nav-item .dropdown-menu {
+        font-size: 0.9rem;
+    } 
+     h1{
+        font-size: 2rem;
+    }
+
+    .btn-joinus{
+        font-size: 1rem;
+        /* padding: ; */
+    }
+} 
+
+@media (min-width: 1200px) {
+    .school-logo{
+        height: 5rem;
+    }
+
+    /* h1{
         font-size: 2rem;
     }
 
     .navbar .navbar-nav .nav-link {
         padding: 0px 9px;
         font-size: 1rem;
+    } */
+
+    .navbar .navbar-nav .nav-link {
+        padding: 9px;
+        font-size: 1rem;
+    }
+    
+    h1{
+        font-size: 2.5rem;
     }
 }
