@@ -1,5 +1,16 @@
 /********** Template CSS **********/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default; */
+
+
 :root {
     --primary: #FE5D37;
     --light: #FFF5F3;
@@ -69,11 +80,12 @@
 
 /*** Heading ***/
 h1{
-    font-family: "Inter", serif;
+    /* font-family: "Inter", serif; */
+    font-family: "Merriweather Sans", serif;
     /* font-weight: 600; */ 
     /* font-family: "Roboto Condensed", serif; */
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -516,7 +528,6 @@ h6,
 
 .school-logo{
     max-width: 100%;
-    height: 6rem;
     object-fit: cover;
 }
 
@@ -537,24 +548,38 @@ h1{
     h1{
         font-size: 1.5rem;
     }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        font-size: 0.8rem;
+    }
+
+    /* .dropdown-item{
+        font-size: 1rem;
+    } */
 }
 
 @media (min-width: 768px) {
     .school-logo{
         height: 5rem;
+        width: 5rem;
     }
 
     h1{
-        font-size: 1.7rem;
+        font-size: 1.75rem;
     }
 
-    /* .navbar .navbar-nav .nav-link {
+    .navbar .navbar-nav .nav-link {
         padding: 8px;
         font-size: 0.9rem;
-    } */
+    }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.5rem;
+        font-size: 0.85rem;
     }
 
     .btn-joinus{
@@ -564,17 +589,19 @@ h1{
 
  @media (min-width: 992px) {
     .school-logo{
-        height: 5rem;
+        height: 5.5rem;
+        width: 5.5rem;
     }
 
     .navbar .navbar-nav .nav-link {
-        padding: 7.5px;
+        padding: 6px;
         font-size: 0.95rem;
     }
 
-     .navbar .nav-item .dropdown-menu {
+    .navbar .nav-item .dropdown-menu {
         font-size: 0.9rem;
-    } 
+    }
+
      h1{
         font-size: 2rem;
     }
@@ -587,7 +614,8 @@ h1{
 
 @media (min-width: 1200px) {
     .school-logo{
-        height: 5rem;
+        height: 6.5rem;
+        width: 6.5rem;
     }
 
     /* h1{
@@ -603,8 +631,12 @@ h1{
         padding: 9px;
         font-size: 1rem;
     }
+
+    .navbar .nav-item .dropdown-menu {
+        font-size: 0.95rem;
+    }
     
     h1{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 }
