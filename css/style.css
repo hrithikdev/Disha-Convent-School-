@@ -526,10 +526,15 @@ h6,
     border-right: none;
 }
 
+/* my-style */
 
 .school-logo{
     max-width: 100%;
     object-fit: cover;
+}
+
+.form-select{
+    background-color: white !important; 
 }
 
 /* .navbar .navbar-nav .nav-link {

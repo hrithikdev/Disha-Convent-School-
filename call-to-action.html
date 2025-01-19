@@ -91,7 +91,7 @@
 
 
         <!-- Call To Action Start -->
-        <div class="container-xxl py-5">
+        <!-- <div class="container-xxl py-5">
             <div class="container">
                 <div class="bg-light rounded">
                     <div class="row g-0">
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Call To Action End -->
 
         <div class="container-xxl py-5">
@@ -121,49 +121,100 @@
                     <div class="row g-0">
                         <div class="wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Make Appointment</h1>
-                                <form>
+                                <h1 class="mb-4">Application Form</h1>
+                                <form id="teacherForm">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
+                                                <input type="text" class="form-control border-0" id="name" placeholder="Name" name="name">
+                                                <label for="name">Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
+                                                <input type="date" class="form-control border-0" id="dob" placeholder="Date of Birth" name="dob">
+                                                <label for="dob">Date of Birth</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
+                                                <input type="email" class="form-control border-0" id="email" placeholder="Email" name="email">
+                                                <label for="email">Email</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
+                                                <input type="tel" class="form-control border-0" id="phone" placeholder="Phone Number" name="phoneNumber">
+                                                <label for="phone">Phone Number</label>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
+                                                <select id="highestDegree" class="form-select form-control border-0" name="highestDegree" required>
+                                                <option value="">Select your degree</option>
+                                                <option value="Bachelor">Bachelor's Degree</option>
+                                                <option value="Master">Master's Degree</option>
+                                                <option value="PhD">PhD</option>
+                                                <option value="Diploma">Diploma</option>
+                                                <option value="Other">Other</option>
+                                                </select>
+                                                <label for="highestDegree" >Highest Degree Obtained</label>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input class="form-control border-0" type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Mathematics, English Literature" required>
+                                                <label for="fieldOfStudy">Field of Study:</label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="university" name="university" placeholder="Enter the name of your university or institution" required>
+                                                <label for="university">University/Institution Name:</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="number" class="form-control border-0" id="graduationYear" name="graduationYear" placeholder="e.g., 2020" min="1900" max="2100" required>
+                                                <label for="graduationYear">Year of Graduation</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="number" class="form-control border-0" id="experience" name="experience" placeholder="e.g., 2" min="0" required>
+                                                <label for="experience">Teaching Experience (Years)</label>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="col-sm-6">
+                                            <div class="form-floating" style="background-color: white;">
+                                                <input type="file" class="form-control form-select border-0" id="resume" name="resume" accept=".pdf, .docx" required>
+                                                <label for="resume" style="margin-bottom: 10px;"class="">Upload Resume:</label>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control border-0" id="preferredsubject" placeholder="Preferred Grades/Subjects">
+                                                <label for="preferredsubject">Preferred Grades/Subjects</label>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
                                                 <label for="cage">Child Age</label>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
+                                                <textarea class="form-control border-0" placeholder="address" id="message" style="height: 100px"></textarea>
+                                                <label for="address">Address</label>
                                             </div>
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
@@ -278,6 +329,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/handle-form.js"></script>
 </body>
 
 </html>
