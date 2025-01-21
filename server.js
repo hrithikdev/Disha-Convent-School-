@@ -14,7 +14,7 @@ app.use(express.json());
 const transporter = nodemailer.createTransport({
   service: 'Gmail', // or another email provider
   auth: {
-    user: 'hrithikpandey.dev@gmail.com', // Replace with your email
+    user: 'hrithikpandey165@gmail.com', // Replace with your email
     pass: 'Hrithk.dev@12@34', // Use an app password or a secure method
   },
 });
@@ -24,8 +24,8 @@ app.post('/send-email', (req, res) => {
   const { name, email} = req.body;
 
   const mailOptions = {
-    from: 'hrithikpandey.dev@gmail.com',
-    to: 'hrithikpandey165@gmail.com', // Replace with the recipient's email
+    from: 'hrithikpandey165@gmail.com',
+    to: 'hrithikpandey.dev@gmail.com', // Replace with the recipient's email
     subject: 'New Form Submission',
     text: `You have a new message from ${name} (${email})`,
   };
