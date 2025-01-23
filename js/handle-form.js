@@ -13,6 +13,7 @@ document.getElementById('teacherForm').addEventListener('submit', async (e) => {
 
     const result = await response.json();
     alert(result.message);
+    window.location.href = "index.html";
   // console.log('Form Data:');
   // for (let [key, value] of formData.entries()) {
   //   console.log(`${key}: ${value}`);
