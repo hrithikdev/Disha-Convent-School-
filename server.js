@@ -28,7 +28,7 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 
 // Endpoint to handle email sending
-app.post('/send-email', async (req, res) => {
+app.post('/send-teaching-email', async (req, res) => {
   const { name, email} = req.body;
 
   try{
@@ -62,6 +62,48 @@ app.post('/send-email', async (req, res) => {
   }
 
 });
+
+
+
+
+app.post('/send-appointment-email', async (req, res) => {
+  const { name, email} = req.body;
+
+  try{
+    const accessToken = await oAuth2Client.getAccessToken();
+
+
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        type: 'OAuth2',
+        user: 'hrithikpandey165@gmail.com',
+        clientId: CLIENT_ID,
+        clientSecret: CLIENT_SECRET,
+        refreshToken: REFRESH_TOKEN,
+        accessToken: ACCESS_TOKEN,
+      },
+    });
+
+    const mailOptions = {
+      from: 'hrithikpandey165@gmail.com',
+      to: 'hrithikpandey.dev@gmail.com',
+      subject: 'Appointment',
+      text: `This is a test email using environment variables in Node.js FROM ${name}, ${email}`,
+    };
+
+    const result = await transporter.sendMail(mailOptions);
+    // console.log('Email sent:', result);
+    res.status(200).json({message: "success"});
+  } catch(err){
+    console.error('Error sending email:', err);
+  }
+
+});
+
+
+
+
 
 // Start the server
 app.listen(PORT, () => {
