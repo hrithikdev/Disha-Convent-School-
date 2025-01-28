@@ -24,6 +24,10 @@
 //   }
 // });
 
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const form1 = document.querySelector("#teacherForm");
   const form2 = document.querySelector("#appointmentForm");
@@ -76,6 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 });
+
+
 
 
 // document.getElementById('appointmentForm').addEventListener('submit', async (e) => {
