@@ -563,7 +563,7 @@ h1{
         object-fit: cover;
     }
 
-    h1{
+    .school-name{
         /* font-size: 1.5rem; */
         display: none;
     }
@@ -589,7 +589,7 @@ h1{
         object-fit: cover;
     }
 
-    h1{
+    .school-name{
         font-size: 1.7rem;
     }
 
@@ -623,7 +623,7 @@ h1{
         font-size: 0.95rem;
     }
 
-     h1{
+    .school-name{
         font-size: 1.75rem;
     }
 
@@ -657,7 +657,7 @@ h1{
         font-size: 1rem;
     }
     
-    h1{
+    .school-name{
         font-size: 2rem;
     }
 }
