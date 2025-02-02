@@ -31,6 +31,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form1 = document.querySelector("#teacherForm");
   const form2 = document.querySelector("#appointmentForm");
+  const form3 = document.querySelector("#contactUsForm");
 
   if (form1) {
       form1.addEventListener('submit', async (e) => {
@@ -79,6 +80,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
   }
+
+
+  if (form3) {
+    form3.addEventListener('submit', async (e) => {
+      e.preventDefault();
+    
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+    
+      try {
+        const response = await fetch('http://localhost:3000/contactus-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+    
+        const result = await response.json();
+        alert(result.message);
+        window.location.href = "index.html";
+      } catch (error) {
+        alert('Failed to submit form. Please try again later.');
+        console.error(error);
+      }
+    });
+}
 });
 
 
