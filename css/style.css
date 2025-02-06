@@ -678,20 +678,34 @@ h1{
     /* text-align: justify; */
 }
 
-.h1-about-us{
+.heading1{
     text-align: center;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.p-about-us{
+.para{
     text-align: justify;
     color: #595959;
 }
 
+.para-internal{
+    margin: 0;
+}
+
+li{
+    color: #595959;
+}
+
 @media(max-width: 768px){
-    
+    .heading1{
+        font-size: 1.4rem;
+    }
+
+    .para{
+        font-size: 0.95rem;
+    }
 }
 
 .become-a-teachers-div{
