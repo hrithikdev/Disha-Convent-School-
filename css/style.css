@@ -679,7 +679,7 @@ h1{
 }
 
 .heading1{
-    text-align: center;
+    text-align: left;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -687,16 +687,17 @@ h1{
 
 .para{
     text-align: justify;
-    color: #595959;
+    color: #2A2A2A;
+    line-height: 24px;
 }
 
 .para-internal{
     margin: 0;
 }
 
-li{
+/* li{
     color: #595959;
-}
+} */
 
 @media(max-width: 768px){
     .heading1{
