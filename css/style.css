@@ -721,6 +721,10 @@ h1{
     .para{
         font-size: 0.95rem;
     }
+
+    .container-about-us{
+        margin: 0rem 4rem !important;
+    }
 }
 
 .become-a-teachers-div{
@@ -760,12 +764,12 @@ h1{
     display: flex;
     justify-content: space-around;
     /* background-color: red; */
-    width: 90%;
+    width: 80%;
     align-items: center;
 }
 
 .message-image{
-    width: 50rem;
+    width: 30rem;
     height: 25rem;
     object-fit: cover;
     /* margin: 3rem; */
@@ -807,8 +811,8 @@ h1{
 
 @media (max-width: 768px) {
     .message-image{
-        width: 10rem;
-        height: 10rem;
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -858,5 +862,52 @@ h1{
 @media(max-width: 992px){
     .footer-photo{
         display: none !important;
+    }
+}
+
+.facility-new-section {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+        .facility-new-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    border-bottom: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    position: relative;
+    flex-wrap: wrap;
+}
+        .facility-new-icon {
+    font-size: 50px;
+    color: #007bff;
+    transition: transform 0.3s;
+}
+.facility-new-item:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+.facility-new-item:hover .facility-new-icon {
+    transform: rotate(360deg);
+}
+.facility-new-text {
+    max-width: 600px;
+    text-align: left;
+    animation: fadeIn 1s;
+}
+        
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .facility-new-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .facility-new-text {
+        text-align: center;
     }
 }
