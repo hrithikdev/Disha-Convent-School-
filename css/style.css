@@ -423,7 +423,7 @@ h6,
     position: absolute;
     width: 100%;
     height: 45px;
-    top: 35%;
+    top: 25%;
     left: 0;
     transform: translateY(-50%);
     display: flex;
@@ -558,8 +558,8 @@ h1{
 @media (max-width: 768px) {
     .school-logo{
         /* display: none; */
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4.7rem;
+        height: 4.7rem;
         object-fit: cover;
     }
 
@@ -584,8 +584,8 @@ h1{
 
 @media (min-width: 768px) {
     .school-logo{
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 4.7rem;
+        width: 4.7rem;
         object-fit: cover;
     }
 
@@ -609,8 +609,8 @@ h1{
 
  @media (min-width: 992px) {
     .school-logo{
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 4.7rem;
+        width: 4.7rem;
         /* display: none; */
     }
 
@@ -720,10 +720,11 @@ h1{
 
     .para{
         font-size: 0.95rem;
+        line-height: 23px;
     }
 
     .container-about-us{
-        margin: 0rem 4rem !important;
+        margin: 0rem 3rem !important;
     }
 }
 
@@ -909,5 +910,15 @@ h1{
     }
     .facility-new-text {
         text-align: center;
+    }
+}
+
+@media(max-width: 992px){
+    a{
+        font-size: 0.92rem !important;
+    }
+
+    p{
+        font-size: 0.92rem !important;
     }
 }
