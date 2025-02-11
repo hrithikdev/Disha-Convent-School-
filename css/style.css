@@ -558,8 +558,8 @@ h1{
 @media (max-width: 768px) {
     .school-logo{
         /* display: none; */
-        width: 4.7rem;
-        height: 4.7rem;
+        width: 6.5rem;
+        height: 6rem;
         object-fit: cover;
     }
 
@@ -584,13 +584,13 @@ h1{
 
 @media (min-width: 768px) {
     .school-logo{
-        height: 4.7rem;
-        width: 4.7rem;
+        height: 7rem;
+        width: 6.5rem;
         object-fit: cover;
     }
 
     .school-name{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -609,8 +609,8 @@ h1{
 
  @media (min-width: 992px) {
     .school-logo{
-        height: 4.7rem;
-        width: 4.7rem;
+        height: 6.5rem;
+        width: 6rem;
         /* display: none; */
     }
 
@@ -624,7 +624,7 @@ h1{
     }
 
     .school-name{
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
 
     .btn-joinus{
@@ -635,8 +635,9 @@ h1{
 
 @media (min-width: 1200px) {
     .school-logo{
-        height: 5.5rem;
-        width: 5.5rem;
+        height: 8rem;
+        width: 7.5rem;
+        object-fit: cover;
     }
 
     /* h1{
@@ -915,10 +916,10 @@ h1{
 
 @media(max-width: 992px){
     a{
-        font-size: 0.92rem !important;
+        font-size: 0.93rem !important;
     }
 
     p{
-        font-size: 0.92rem !important;
+        font-size: 0.93rem !important;
     }
 }
