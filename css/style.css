@@ -564,8 +564,8 @@ h1{
     }
 
     .school-name{
-        font-size: 1.7rem;
-        /* display: none; */
+        /* font-size: 1.7rem; */
+        display: none;
     }
 
     .navbar .navbar-nav .nav-link {
