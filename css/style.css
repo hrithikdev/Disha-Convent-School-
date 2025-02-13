@@ -558,8 +558,8 @@ h1{
 @media (max-width: 768px) {
     .school-logo{
         /* display: none; */
-        width: 5.5rem;
-        height: 5rem;
+        width: 5.8rem;
+        height: 5.3rem;
         object-fit: cover;
     }
 
@@ -682,7 +682,7 @@ h1{
     flex-direction: column;
     /* justify-content: center; */
     margin: 0rem 7rem !important;
-    /* align-items: left; */
+    align-items: center;
     /* background-color: red; */
 
 }
@@ -691,6 +691,13 @@ h1{
     display: flex;
     flex-direction: column;
     /* text-align: justify; */
+}
+
+.school-image{
+    width: 60rem;
+    height: 50rem;
+    object-fit: cover;
+    margin-bottom: 3rem;
 }
 
 .heading1{
@@ -726,6 +733,32 @@ h1{
 
     .container-about-us{
         margin: 0rem 3rem !important;
+    }
+
+    .school-image{
+        width: 22rem;
+        height: 17rem;
+    }
+}
+
+@media(min-width: 768px){
+    .school-image{
+        width: 35rem;
+        height: 25rem;
+    }
+}
+
+@media(min-width: 992px){
+    .school-image{
+        width: 45rem;
+        height: 30rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .school-image{
+        width: 50rem;
+        height: 35rem;
     }
 }
 
