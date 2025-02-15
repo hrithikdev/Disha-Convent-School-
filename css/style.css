@@ -10,6 +10,9 @@
   xxl: 1400px
 ) !default; */
 
+body{
+    overflow-x: hidden;
+}
 
 :root {
     --primary: #FE5D37;
