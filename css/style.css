@@ -611,6 +611,7 @@ h1{
     .school-logo{
         height: 6rem;
         width: 5.5rem;
+        object-fit: cover;
         /* display: none; */
     }
 
@@ -624,7 +625,7 @@ h1{
     }
 
     .school-name{
-        font-size: 1.6rem;
+        font-size: 1.55rem;
     }
 
     .btn-joinus{
@@ -635,8 +636,8 @@ h1{
 
 @media (min-width: 1200px) {
     .school-logo{
-        height: 7.5rem;
-        width: 7rem;
+        height: 7.7rem;
+        width: 7.2rem;
         object-fit: cover;
     }
 
