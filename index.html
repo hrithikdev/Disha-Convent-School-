@@ -729,34 +729,64 @@
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
+                                                <input type="text" name="Name" class="form-control border-0" id="name" placeholder="Name">
+                                                <label for="name">Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="mobile" placeholder="Guardian Phone Number">
-                                                <label for="mobile">Gurdian Mobile</label>
+                                                <input type="text" name="Relationship to Student" class="form-control border-0" id="relationship" placeholder="Relationship to Student">
+                                                <label for="relationship">Relationship to Student</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
+                                                <input type="tel" name="Phone Number" class="form-control border-0" pattern="[0-9]{10}" id="phone" placeholder="Phone Number">
+                                                <label for="phone">Phone Number</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
+                                                <input type="text" name="Student Name" class="form-control border-0" id="child name" placeholder="Student Name">
+                                                <label for="child name">Student Name</label>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" name="Grade/Class" class="form-control border-0" id="grade/class" placeholder="Grade/Class">
+                                                <label for="grade/class">Grade/Class</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="date" name="AppointmentDate" class="form-control border-0" id="appointmentDate" placeholder="Appointment Date">
+                                                <label for="appointmentDate">Appointment Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="time" name="AppointmentTime" min="09:00" max="12:00" class="form-control border-0" id="appointment time" placeholder="Appointment Time">
+                                                <label for="appointment time">Appointment Time</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <select name="reason" class="form-select form-control border-0">
+                                                    <option value="">Select Reason for Appointment</option>
+                                                    <option value="Academic Concern">Academic Concern</option>
+                                                    <option value="Behavioral Concern">Behavioral Concern</option>
+                                                    <option value="Medical Issue">Medical Issue</option>
+                                                    <option value="General Inquiry">General Inquiry</option>
+                                                </select>
+                                            
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-12">
                                             <div class="form-floating">
                                                 <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-12">
                                             <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                         </div>
@@ -934,7 +964,9 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="config.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/handle-form.js"></script>
 </body>
 
 </html>

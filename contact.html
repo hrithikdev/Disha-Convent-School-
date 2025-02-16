@@ -169,29 +169,29 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h3 class="mb-4">Send Message</h3>
-                                <form id="contactUsForm">
+                                <form id="contactForm">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                                                <input type="text" name="Name" class="form-control border-0" id="name" placeholder="Your Name">
                                                 <label for="name">Your Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="mobile" placeholder="Your Phone Number">
-                                                <label for="mobile">Your Phone Number</label>
+                                                <input type="tel" name="Phone Number" class="form-control border-0" name="Phone Number" id="phone" pattern="[0-9]{10}" placeholder="Phone Number">
+                                                <label for="phone">Phone Number</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
+                                                <input type="text" name="User_Subject" class="form-control border-0" id="subject" placeholder="Subject">
                                                 <label for="subject">Subject</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                <textarea name="Message" class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
@@ -325,6 +325,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+     <script src="config.js"></script>
     <script src="js/handle-form.js"></script>
     <script src="js/main.js"></script>
 </body>
