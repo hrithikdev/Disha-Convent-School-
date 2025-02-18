@@ -561,8 +561,8 @@ h1{
 @media (max-width: 768px) {
     .school-logo{
         /* display: none; */
-        width: 5.8rem;
-        height: 5.3rem;
+        width: 6rem;
+        height: 5.5rem;
         object-fit: cover;
     }
 
@@ -587,8 +587,8 @@ h1{
 
 @media (min-width: 768px) {
     .school-logo{
-        height: 6rem;
-        width: 5.5rem;
+        height: 6.3rem;
+        width: 5.8rem;
         object-fit: cover;
     }
 
@@ -604,16 +604,12 @@ h1{
     .navbar .nav-item .dropdown-menu {
         font-size: 0.95rem;
     }
-
-    .btn-joinus{
-        font-size: 0.9rem;
-    }
 }
 
  @media (min-width: 992px) {
     .school-logo{
-        height: 6rem;
-        width: 5.5rem;
+        height: 6.1rem;
+        width: 5.55rem;
         object-fit: cover;
         /* display: none; */
     }
@@ -630,17 +626,12 @@ h1{
     .school-name{
         font-size: 1.55rem;
     }
-
-    .btn-joinus{
-        font-size: 1rem;
-        /* padding: ; */
-    }
 } 
 
 @media (min-width: 1200px) {
     .school-logo{
-        height: 7.7rem;
-        width: 7.2rem;
+        height: 8rem;
+        width: 7.5rem;
         object-fit: cover;
     }
 
@@ -960,3 +951,15 @@ h1{
         font-size: 0.93rem !important;
     }
 }
+
+
+.image-dec {
+    border-radius: 6% !important;
+    /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); */
+  }
+
+  @media(max-width: 992px){
+    .remove-img{
+        display: none;
+    }
+  }
