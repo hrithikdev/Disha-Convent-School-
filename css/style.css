@@ -268,7 +268,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Untitled\ design\ \(4\).png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/Untitled\ design\ \(6\).png) center center no-repeat;
     background-size: cover;
 }
 
@@ -813,6 +813,10 @@ h1{
 
 .message-para{
     text-align: justify;
+}
+
+.message-link{
+    color: #0F53AA !important;
 }
 
 
