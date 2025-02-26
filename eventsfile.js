@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/events";
+const API_URL = "https://disha-convent-school.onrender.com/events";
 
 async function fetchEvents() {
     try {
