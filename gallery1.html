@@ -58,6 +58,7 @@
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
+            font-size: 0.9rem;
             cursor: pointer;
             transition: background 0.3s;
         }
@@ -123,11 +124,6 @@
         //     date: `2024-0${(i % 9) + 1}-15`
         // }));
 
-        // const events = events.map((_, i) => ({
-        //     img: `event${(i % 3) + 1}-thumbnail.jpg`,
-        //     name: `Event ${i + 1}`,
-        //     date: `2024-0${(i % 9) + 1}-15`
-        // }));
 
         console.log(events);
         const itemsPerPage = 12;
@@ -161,7 +157,8 @@
             const totalPages = Math.ceil(events.length / itemsPerPage);
             if (currentPage > 1) {
                 const prevButton = document.createElement("button");
-                prevButton.innerText = "←";
+                // prevButton.innerText = "←";
+                prevButton.innerText = "‹";
                 prevButton.onclick = () => changePage(currentPage - 1);
                 pagination.appendChild(prevButton);
             }
@@ -174,7 +171,8 @@
             }
             if (currentPage < totalPages) {
                 const nextButton = document.createElement("button");
-                nextButton.innerText = "→";
+                // nextButton.innerText = "→";
+                nextButton.innerText = "›";
                 nextButton.onclick = () => changePage(currentPage + 1);
                 pagination.appendChild(nextButton);
             }

@@ -109,8 +109,20 @@
             </div>
         </div>
         <!-- Page Header End -->
-
-            <p style="margin: 5rem; font-size: 3rem !important;">Coming Soon...</p>
+            
+            <h2 class="message-heading">Gallery</h2>
+            <!-- <p style="margin: 5rem; font-size: 3rem !important;">Coming Soon...</p> -->
+            <div id="gallery" class="gallery-container"></div>
+            <div class="pagination" id="pagination"></div>
+        
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" class="modal-content">
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+        
+            
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -208,7 +220,93 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="./eventsfile.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // const events = events.map((_, i) => ({
+        //     img: `event${(i % 3) + 1}-thumbnail.jpg`,
+        //     name: `Event ${i + 1}`,
+        //     date: `2024-0${(i % 9) + 1}-15`
+        // }));
+
+
+        // console.log(events);
+        const itemsPerPage = 12;
+        let currentPage = 1;
+        let currentImageIndex = 0;
+        let ind = 0;
+
+        function displayGallery(page) {
+            const gallery = document.getElementById("gallery");
+            gallery.innerHTML = "";
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedItems = events.slice(start, end);
+            paginatedItems.forEach((event, index) => {
+                const eventCard = document.createElement("div");
+                eventCard.classList.add("event-card");
+                eventCard.innerHTML = `
+                    <img src="${event.img[0]}" alt="${event.name}">
+                    <p>${event.name}</p>
+                    <span class="event-date">${event.date}</span>
+                `;
+                eventCard.onclick = () => openModal(start + index);
+                gallery.appendChild(eventCard);
+            });
+            displayPagination();
+        }
+
+        function displayPagination() {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+            const totalPages = Math.ceil(events.length / itemsPerPage);
+            if (currentPage > 1) {
+                const prevButton = document.createElement("button");
+                // prevButton.innerText = "←";
+                prevButton.innerText = "‹";
+                prevButton.onclick = () => changePage(currentPage - 1);
+                pagination.appendChild(prevButton);
+            }
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement("button");
+                button.innerText = i;
+                if (i === currentPage) button.classList.add("active");
+                button.onclick = () => changePage(i);
+                pagination.appendChild(button);
+            }
+            if (currentPage < totalPages) {
+                const nextButton = document.createElement("button");
+                // nextButton.innerText = "→";
+                nextButton.innerText = "›";
+                nextButton.onclick = () => changePage(currentPage + 1);
+                pagination.appendChild(nextButton);
+            }
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            displayGallery(currentPage);
+        }
+
+        function openModal(index) {
+            ind=index;
+            currentImageIndex = index;
+            document.getElementById("modalImage").src = events[index].img[0];
+            document.getElementById("imageModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        function changeImage(step) {
+            currentImageIndex = (currentImageIndex + step + events[ind].img.length) % events[ind].img.length;
+            document.getElementById("modalImage").src = events[ind].img[currentImageIndex];
+        }
+
+        displayGallery(currentPage);
+    </script>
 </body>
 
 </html>
