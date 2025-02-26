@@ -232,10 +232,32 @@
 
 
         // console.log(events);
+        // import { fetchEvents } from "./eventsfile.js";
+        // console.log(events);
         const itemsPerPage = 12;
         let currentPage = 1;
         let currentImageIndex = 0;
         let ind = 0;
+        let events = "";
+        
+        async function loadEvents() {
+            try{
+                events = await fetchEvents();
+                
+                displayGallery(currentPage);
+            } catch(err){
+                console.log(err);
+            }
+            
+            // console.log("Fetched Events:", events);
+
+            // Example: Display events in the console or use them elsewhere
+            // events.forEach(event => {
+            //     console.log(`Event Name: ${event.name}, Date: ${event.date}`);
+            // });
+        }
+
+        loadEvents();
 
         function displayGallery(page) {
             const gallery = document.getElementById("gallery");
@@ -247,8 +269,8 @@
                 const eventCard = document.createElement("div");
                 eventCard.classList.add("event-card");
                 eventCard.innerHTML = `
-                    <img src="${event.img[0]}" alt="${event.name}">
-                    <p>${event.name}</p>
+                    <img src="${event.images[0]}" alt="${event.title}" loading="lazy">
+                    <p>${event.title}</p>
                     <span class="event-date">${event.date}</span>
                 `;
                 eventCard.onclick = () => openModal(start + index);
@@ -292,7 +314,7 @@
         function openModal(index) {
             ind=index;
             currentImageIndex = index;
-            document.getElementById("modalImage").src = events[index].img[0];
+            document.getElementById("modalImage").src = events[index].images[0];
             document.getElementById("imageModal").style.display = "flex";
         }
 
@@ -301,11 +323,11 @@
         }
 
         function changeImage(step) {
-            currentImageIndex = (currentImageIndex + step + events[ind].img.length) % events[ind].img.length;
-            document.getElementById("modalImage").src = events[ind].img[currentImageIndex];
+            currentImageIndex = (currentImageIndex + step + events[ind].images.length) % events[ind].images.length;
+            document.getElementById("modalImage").src = events[ind].images[currentImageIndex];
         }
 
-        displayGallery(currentPage);
+        // displayGallery(currentPage);
     </script>
 </body>
 
