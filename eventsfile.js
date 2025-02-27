@@ -1,6 +1,8 @@
+import { CONFIG } from "./config.js";
+
 const API_URL=CONFIG.API_URL;
 
-async function fetchEvents() {
+export default async function fetchEvents() {
     try {
         const response = await fetch(API_URL);
         const events = await response.json();

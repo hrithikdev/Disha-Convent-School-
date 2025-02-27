@@ -220,10 +220,10 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="./eventsfile.js"></script>
+    <script type="module" src="./eventsfile.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
+    <script type="module">
         // const events = events.map((_, i) => ({
         //     img: `event${(i % 3) + 1}-thumbnail.jpg`,
         //     name: `Event ${i + 1}`,
@@ -232,8 +232,8 @@
 
 
         // console.log(events);
-        // import { fetchEvents } from "./eventsfile.js";
-        // console.log(events);
+        import fetchEvents from "./eventsfile.js";
+        
         const itemsPerPage = 12;
         let currentPage = 1;
         let currentImageIndex = 0;
@@ -328,6 +328,11 @@
         }
 
         // displayGallery(currentPage);
+
+        // Attach to global scope
+        window.openModal = openModal;
+        window.closeModal = closeModal;
+        window.changeImage = changeImage;
     </script>
 </body>
 
