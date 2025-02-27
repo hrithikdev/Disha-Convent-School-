@@ -545,6 +545,10 @@ h6,
     object-fit: cover;
 }
 
+.school-name{
+    font-family: "DM Sans", serif;
+}
+
 .form-select{
     background-color: white !important; 
 }
@@ -615,8 +619,8 @@ h1{
     }
 
     .navbar .navbar-nav .nav-link {
-        padding: 6px;
-        font-size: 0.95rem;
+        padding: 5px;
+        font-size: 0.9rem;
     }
 
     .navbar .nav-item .dropdown-menu {
@@ -624,9 +628,41 @@ h1{
     }
 
     .school-name{
-        font-size: 1.55rem;
+        font-size: 1.75rem;
     }
 } 
+
+@media(min-width: 1016px){
+    .navbar .navbar-nav .nav-link {
+        padding: 5.5px;
+        font-size: 0.93rem;
+    }
+}
+
+@media(min-width: 1016px){
+    .navbar .navbar-nav .nav-link {
+        padding: 5.5px;
+        font-size: 0.95rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .navbar .navbar-nav .nav-link {
+        padding: 6px;
+    }
+}
+
+/* @media(min-width: 1018px){
+    .school-name{
+        font-size: 1.7rem;
+    }
+} */
+
+@media(min-width: 1031px){
+    .school-name{
+        font-size: 1.8rem;
+    }
+}
 
 @media (min-width: 1200px) {
     .school-logo{
@@ -654,7 +690,7 @@ h1{
     }
     
     .school-name{
-        font-size: 2rem;
+        font-size: 2.23rem;
     }
 }
 
