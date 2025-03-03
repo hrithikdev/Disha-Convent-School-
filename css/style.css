@@ -565,8 +565,8 @@ h1{
 @media (max-width: 768px) {
     .school-logo{
         /* display: none; */
-        width: 6rem;
-        height: 5.95rem;
+        width: 6.1rem;
+        height: 6.05rem;
         object-fit: cover;
     }
 
@@ -591,8 +591,8 @@ h1{
 
 @media (min-width: 768px) {
     .school-logo{
-        height: 6.25rem;
-        width: 6.2rem;
+        height: 6.35rem;
+        width: 6.4rem;
         object-fit: cover;
     }
 
