@@ -639,14 +639,14 @@ h1{
     }
 }
 
-@media(min-width: 1016px){
+@media(min-width: 1025px){
     .navbar .navbar-nav .nav-link {
         padding: 5.5px;
         font-size: 0.95rem;
     }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1033px){
     .navbar .navbar-nav .nav-link {
         padding: 6px;
     }
@@ -658,7 +658,7 @@ h1{
     }
 } */
 
-@media(min-width: 1031px){
+@media(min-width: 1040px){
     .school-name{
         font-size: 1.8rem;
     }
@@ -681,7 +681,7 @@ h1{
     } */
 
     .navbar .navbar-nav .nav-link {
-        padding: 9px;
+        padding: 8.3px;
         font-size: 1rem;
     }
 
