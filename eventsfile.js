@@ -1,6 +1,6 @@
-import { CONFIG } from "./config.js";
+// import { CONFIG } from "./config.js";
 
-const API_URL=CONFIG.API_URL;
+const API_URL=window.BACKEND_URL;
 
 export default async function fetchEvents() {
     try {
