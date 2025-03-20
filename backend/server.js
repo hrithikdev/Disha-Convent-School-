@@ -34,11 +34,6 @@ app.get("/events", async (req, res) => {
   }
 });
 
-app.get('/config.js', (req, res) => {
-  res.type('text/javascript');
-  res.send(process.env.BACKEND_URL);
-});
-
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

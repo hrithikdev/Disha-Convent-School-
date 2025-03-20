@@ -1,13 +1,15 @@
 // import { CONFIG } from "./config.js";
 
-const API_URL=window.BACKEND_URL;
+
+const API_URL="https://disha-convent-school.onrender.com/events";
 
 export default async function fetchEvents() {
     try {
         const response = await fetch(API_URL);
         const events = await response.json();
         // console.log(events);
-        return events;
+        const reversedEvents = events.reverse();
+        return reversedEvents;
     } catch (error) {
         console.error("Error fetching events:", error);
         return [];
