@@ -8,8 +8,9 @@ export default async function fetchEvents() {
         const response = await fetch(API_URL);
         const events = await response.json();
         // console.log(events);
-        const reversedEvents = events.reverse();
-        return reversedEvents;
+        const sortedEvents = events.sort((a, b) => new Date(b.date) - new Date(a.date));
+        // const reversedEvents = events.reverse();
+        return sortedEvents;
     } catch (error) {
         console.error("Error fetching events:", error);
         return [];
