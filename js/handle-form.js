@@ -29,8 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const dateInput = document.querySelector("#appointmentDate");
 
   if(dateInput){
-    let today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
-    dateInput.setAttribute("min", today);
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate()+1);
+    let minDate = tomorrow.toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
+    dateInput.setAttribute("min", minDate);
   }
 
   if (form1) {
