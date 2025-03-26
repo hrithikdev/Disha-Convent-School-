@@ -577,11 +577,11 @@ h1{
 
     .navbar .navbar-nav .nav-link {
         padding: 4px;
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 
     /* .dropdown-item{
@@ -602,11 +602,11 @@ h1{
 
     .navbar .navbar-nav .nav-link {
         padding: 5.5px;
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 }
 
@@ -624,7 +624,7 @@ h1{
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 
     .school-name{
@@ -635,14 +635,14 @@ h1{
 @media(min-width: 1016px){
     .navbar .navbar-nav .nav-link {
         padding: 5.5px;
-        font-size: 0.93rem;
+        font-size: 0.92rem;
     }
 }
 
 @media(min-width: 1025px){
     .navbar .navbar-nav .nav-link {
         padding: 5.5px;
-        font-size: 0.95rem;
+        font-size: 0.94rem;
     }
 }
 
@@ -682,11 +682,11 @@ h1{
 
     .navbar .navbar-nav .nav-link {
         padding: 8.3px;
-        font-size: 1rem;
+        font-size: 0.98rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 1rem;
+        font-size: 0.98rem;
     }
     
     .school-name{
