@@ -576,12 +576,12 @@ h1{
     }
 
     .navbar .navbar-nav .nav-link {
-        padding: 4px;
-        font-size: 0.94rem;
+        padding: 3.7px;
+        font-size: 0.9rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.94rem;
+        font-size: 0.9rem;
     }
 
     /* .dropdown-item{
@@ -597,16 +597,16 @@ h1{
     }
 
     .school-name{
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
     .navbar .navbar-nav .nav-link {
-        padding: 5.5px;
-        font-size: 0.94rem;
+        padding: 5.3px;
+        font-size: 0.9rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.94rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -619,36 +619,36 @@ h1{
     }
 
     .navbar .navbar-nav .nav-link {
-        padding: 5px;
-        font-size: 0.9rem;
+        padding: 4.8px;
+        font-size: 0.86rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.94rem;
+        font-size: 0.9rem;
     }
 
     .school-name{
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 } 
 
 @media(min-width: 1016px){
     .navbar .navbar-nav .nav-link {
-        padding: 5.5px;
-        font-size: 0.92rem;
+        padding: 5.3px;
+        font-size: 0.88rem;
     }
 }
 
 @media(min-width: 1025px){
     .navbar .navbar-nav .nav-link {
-        padding: 5.5px;
-        font-size: 0.94rem;
+        padding: 5.3px;
+        font-size: 0.9rem;
     }
 }
 
 @media(min-width: 1033px){
     .navbar .navbar-nav .nav-link {
-        padding: 6px;
+        padding: 5.8px;
     }
 }
 
@@ -660,7 +660,7 @@ h1{
 
 @media(min-width: 1040px){
     .school-name{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -681,16 +681,16 @@ h1{
     } */
 
     .navbar .navbar-nav .nav-link {
-        padding: 8.3px;
-        font-size: 0.98rem;
+        padding: 8.2px;
+        font-size: 0.94rem;
     }
 
     .navbar .nav-item .dropdown-menu {
-        font-size: 0.98rem;
+        font-size: 0.94rem;
     }
     
     .school-name{
-        font-size: 2.23rem;
+        font-size: 2.13rem;
     }
 }
 
