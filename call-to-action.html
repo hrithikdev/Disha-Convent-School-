@@ -153,31 +153,31 @@
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" name="Name" class="form-control border-0" id="name" placeholder="Name" name="name" required>
+                                                <input type="text" name="Name" class="form-control border-0" id="name" placeholder="Name" required>
                                                 <label for="name">Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="date" name="Date of Birth" class="form-control border-0" id="dob" placeholder="Date of Birth" name="dob" required>
+                                                <input type="date" name="Date of Birth" class="form-control border-0" id="dob" placeholder="Date of Birth" required>
                                                 <label for="dob">Date of Birth</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" name="Email" class="form-control border-0" id="email" placeholder="Email" name="email" required>
+                                                <input type="email" name="Email" class="form-control border-0" id="email" placeholder="Email" required>
                                                 <label for="email">Email</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="tel" name="Phone Number" class="form-control border-0" id="phone" placeholder="Phone Number" name="phoneNumber" required>
+                                                <input type="tel" name="Phone Number" class="form-control border-0" id="phone" placeholder="Phone Number" required>
                                                 <label for="phone">Phone Number</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <select id="highestDegree" name="Highest Degree" class="form-select form-control border-0" name="highestDegree" required>
+                                                <select id="highestDegree" name="Highest Degree" class="form-select form-control border-0" required>
                                                 <option value="">Select your degree</option>
                                                 <option value="Bachelor">Bachelor's Degree</option>
                                                 <option value="Master">Master's Degree</option>
@@ -190,7 +190,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input class="form-control border-0" name="Field of Study" type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Mathematics, English Literature" required>
+                                                <input class="form-control border-0" name="Field of Study" type="text" id="fieldOfStudy" placeholder="e.g., Mathematics, English Literature" required>
                                                 <label for="fieldOfStudy">Field of Study:</label>
                                             </div>
                                         </div>
@@ -198,21 +198,21 @@
 
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" name="University/Institution Name" class="form-control border-0" id="university" name="university" placeholder="Enter the name of your university or institution" required>
+                                                <input type="text" name="University/Institution Name" class="form-control border-0" id="university" placeholder="Enter the name of your university or institution" required>
                                                 <label for="university">University/Institution Name:</label>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="number" name="Year of Graduation" class="form-control border-0" id="graduationYear" name="graduationYear" placeholder="e.g., 2020" min="1900" max="2100" required>
+                                                <input type="number" name="Year of Graduation" class="form-control border-0" id="graduationYear" placeholder="e.g., 2020" min="1900" max="2100" required>
                                                 <label for="graduationYear">Year of Graduation</label>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="number" name="Teaching Experience (Years)" class="form-control border-0" id="experience" name="experience" placeholder="e.g., 2" min="0" required>
+                                                <input type="number" name="Teaching Experience (Years)" class="form-control border-0" id="experience" placeholder="e.g., 2" min="0" required>
                                                 <label for="experience">Teaching Experience (Years)</label>
                                             </div>
                                         </div>
@@ -236,7 +236,13 @@
                                                 <label for="cage">Child Age</label>
                                             </div>
                                         </div> -->
-                                        <div class="col-12">
+                                        <div class="col-sm-6">
+                                            <div class="form-floating">
+                                                <input type="text" name="Expected Salary" class="form-control border-0" id="expectedSalary" placeholder="Expected Salary (LPA)" required>
+                                                <label for="expectedSalary">Expected Salary (LPA)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
                                             <div class="form-floating">
                                                 <textarea name="Address" class="form-control border-0" placeholder="address" id="message" style="height: 100px" required></textarea>
                                                 <label for="address">Address</label>
@@ -355,6 +361,21 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script>
+        const salaryInput = document.getElementById('expectedSalary');
+
+        salaryInput.addEventListener('input', function (e) {
+        let value = e.target.value;
+
+        // Remove all non-digit characters
+        value = value.replace(/[^0-9]/g, '');
+
+        // Format number with commas
+        value = new Intl.NumberFormat('en-US').format(value);
+
+        e.target.value = value;
+        });
+    </script>
     <script src="config.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
